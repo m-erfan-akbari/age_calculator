@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="animated">
+        <div class="container pt-3 rounded-3">
+            <h2 class="text-center">محاسبه گر سن</h2>
+            <div class="row p-3">
+                <div class="col-10 row justify-content-center">
+                    <span class="col-md-3 text-center mt-3 offset-3 visually-hidden h5" >تولد خود را انتخاب کنید</span>
+                    <div class="col-md-3 mt-3 text-center offset-3 offset-md-0 opacity-0">
+                        <input id="date-input" type="date" class="form-control border-0">
+                    </div>
+                    <span id="choose-date" class="col-md-3 text-center mt-3 offset-3 offset-md-0 visually-hidden h5"></span>
+                </div>
+            </div>
+            <div id="calculate" class="row text-center justify-content-center">
+                <div class="col-sm-5 col-lg-3 bg-gray box">
+                    <h5 class="p-2 title-color">سال</h5>
+                    <p id="year" class="text-dark h5 mt-4"></p>
+                </div>
+                <div class="col-sm-5 col-lg-3 bg-gray box">
+                    <h5 class="p-2 title-color">ماه</h5>
+                    <p id="month" class="text-dark h5 mt-4"></p>
+                </div>
+                <div class="col-sm-5 col-lg-3 bg-gray box">
+                    <h5 class="p-2 title-color">روز</h5>
+                    <p id="day" class="text-dark h5 mt-4"></p>
+                </div>
+                <div class="col-sm-5 col-lg-3 bg-gray box">
+                    <h5 class="p-2 title-color">ساعت</h5>
+                    <p id="hour" class="text-dark h5 mt-4"></p>
+                </div>
+                <div class="col-sm-5 col-lg-3 bg-gray box">
+                    <h5 class="p-2 title-color">دقیقه</h5>
+                    <p id="minute" class="text-dark h5 mt-4"></p>
+                </div>
+                <div class="col-sm-5 col-lg-3 bg-gray box">
+                    <h5 class="p-2 title-color">ثانیه</h5>
+                    <p id="second" class="text-dark h5 mt-4"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

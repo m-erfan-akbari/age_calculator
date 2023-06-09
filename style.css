@@ -1,0 +1,115 @@
+@font-face {
+    font-family: vazir;
+    src: url('font/vazir.ttf') format('ttf');
+    src: url('font/vazir.woff') format('woff');
+    src: url('font/vazir.woff2') format('woff2');
+    src: url('font/vazir.eot') format('eot');
+}
+
+:root{
+    --dark-color: #15262b;
+    --primary-color: #008554;
+    --secondary-color: #3fb68a;
+    --cyan-color: #00221f;
+    --green-color: #68DD9B;
+}
+
+body{
+    font-family: 'vazir', 'b titr', 'Courier New', Courier, monospace;
+    direction: rtl;
+    background-color: var(--dark-color);
+}
+.bg-gray{
+    background-color: var(--green-color);
+    color: var(--green-color);
+}
+.title-color{
+    background-color: var(--cyan-color);
+    color: var(--secondary-color);
+}
+
+/* container */
+.animated{
+    margin-top: 5rem;
+    animation: falling 1s cubic-bezier(0.74, 0.15, 0.5, 1.18);
+    transition: 1s ease-in-out;
+}
+.container{
+    background-color: var(--primary-color);
+    width: 20%;
+    transition: 2s cubic-bezier(0.37,-0.01, 0, 1.07);
+}
+.container:hover{
+    width: 100%;
+}
+#calculate{
+    height: 0;
+    overflow: hidden;
+}
+.show{
+    animation: unroll .8s cubic-bezier(0.36, 0.3, 0.05, 0.99);
+    height: auto;
+}
+#date-input{
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+}
+
+/* boxes */
+.box{
+    height: 130px;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 0;
+}
+.box h5{
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Animation */
+
+@keyframes unroll {
+    From{
+        height: 0;
+    }
+    To{
+        height: 320px;
+        transition: height;
+    }
+}
+
+@keyframes falling {
+    From{
+        margin-top: -10rem;
+    }
+    To{
+        margin-top: 5rem;
+    }
+}
+
+/* Resposive unrolling*/
+
+@media (max-width:992px) {
+    @keyframes unroll {
+        From{
+            height: 0;
+        }
+        To{
+            height: 480px;
+            transition: height;
+        }
+    }
+}
+@media (max-width:576px) {
+    @keyframes unroll {
+        From{
+            height: 0;
+        }
+        To{
+            height: 960px;
+            transition: height;
+        }
+    }
+}
