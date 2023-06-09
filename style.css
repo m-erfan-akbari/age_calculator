@@ -12,7 +12,7 @@
 }
 
 body{
-    font-family: 'vazir', 'b titr', 'Courier New', Courier, monospace;
+    font-family: vazir, 'b titr', 'Courier New', Courier, monospace;
     direction: rtl;
     background-color: var(--dark-color);
 }
